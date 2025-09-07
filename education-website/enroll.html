@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enroll - Zevora Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <img src="images/logo.png" alt="Zevora Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="enroll.html" class="active">Enroll</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="darkToggle">Toggle Mode</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>Enroll Now</h1>
+    <p class="about-intro">Fill the form below to enroll in your preferred course. All fields are mandatory.</p>
+
+    <section class="form-section">
+      <form id="enrollForm">
+        
+        <div class="form-group">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Enter Full Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Enter Email Address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number <span class="required">*</span></label>
+          <input type="tel" id="mobile" name="mobile" placeholder="10-digit Mobile Number" pattern="[0-9]{10}" required />
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course <span class="required">*</span></label>
+          <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option>Cybersecurity</option>
+            <option>Prompt Engineering</option>
+            <option>Cloud Computing</option>
+            <option>Full Stack Development</option>
+          </select>
+        </div>
+
+        <button type="submit">Enroll Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Zevora Technologies. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
